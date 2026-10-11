@@ -1,0 +1,16 @@
+[
+  {
+    "time": "2026-09-11T22:05:25",
+    "command": "hello jarvis",
+    "intent": "AI_CHAT",
+    "target": "hello jarvis",
+    "result": "chat"
+  },
+  {
+    "time": "2026-09-11T22:06:10",
+    "command": "jarvis tum kya kya kar sakte ho",
+    "intent": "AI_CHAT",
+    "target": "jarvis tum kya kya kar sakte ho",
+    "result": "chat"
+  }
+]

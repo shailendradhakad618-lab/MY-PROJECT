@@ -1,0 +1,37 @@
+{
+  "facts": {},
+  "conversation": [
+    {
+      "role": "user",
+      "text": "\nYou are the planning layer of a Windows personal assistant named JARVIS.\nReturn ONLY valid JSON. No markdown and no explanation.\n\nAllowed action names:\nopen_app, web_search, youtube_search, read_screen, click, type,\npress_key, scroll_up, scroll_down, stop_scroll, chat\n\nRules:\n- Maximum 8 actions.\n- Use only the allowed action names.\n- Each action must be an object with keys: action, target.\n- target must be a short string.\n- Never invent an action.\n- Never perform shutdown, reboot, format, delete, uninstall, payment,\n  password, credential, or other sensitive operations.\n- If the request is only a question/conversation, use chat with the\n  complete user request as target.\n- If the user asks to search the web, use web_search.\n- If the user explicitly says YouTube, use youtube_search.\n- If the user asks what is on the screen, use read_screen.\n- If the request is ambiguous and cannot safely map to an action, use chat.\n\nPrevious context:\n{\"last_command\": \"\", \"last_intent\": \"\", \"last_target\": \"\", \"last_result\": \"\", \"running_task\": false}\n\nUser request:\nhello jarvis\n\nOutput format:\n{\"actions\":[{\"action\":\"chat\",\"target\":\"...\"}]}\n"
+    },
+    {
+      "role": "jarvis",
+      "text": "{\"actions\":[{\"action\":\"chat\",\"target\":\"hello jarvis\"}]}"
+    },
+    {
+      "role": "user",
+      "text": "hello jarvis"
+    },
+    {
+      "role": "jarvis",
+      "text": "Hello Shailendra! How can I help you today?"
+    },
+    {
+      "role": "user",
+      "text": "\nYou are the planning layer of a Windows personal assistant named JARVIS.\nReturn ONLY valid JSON. No markdown and no explanation.\n\nAllowed action names:\nopen_app, web_search, youtube_search, read_screen, click, type,\npress_key, scroll_up, scroll_down, stop_scroll, chat\n\nRules:\n- Maximum 8 actions.\n- Use only the allowed action names.\n- Each action must be an object with keys: action, target.\n- target must be a short string.\n- Never invent an action.\n- Never perform shutdown, reboot, format, delete, uninstall, payment,\n  password, credential, or other sensitive operations.\n- If the request is only a question/conversation, use chat with the\n  complete user request as target.\n- If the user asks to search the web, use web_search.\n- If the user explicitly says YouTube, use youtube_search.\n- If the user asks what is on the screen, use read_screen.\n- If the request is ambiguous and cannot safely map to an action, use chat.\n\nPrevious context:\n{\"last_command\": \"hello jarvis\", \"last_intent\": \"\", \"last_target\": \"\", \"last_result\": \"complete\", \"running_task\": false}\n\nUser request:\njarvis tum kya kya kar sakte ho\n\nOutput format:\n{\"actions\":[{\"action\":\"chat\",\"target\":\"...\"}]}\n"
+    },
+    {
+      "role": "jarvis",
+      "text": "{\"actions\":[{\"action\":\"chat\",\"target\":\"jarvis tum kya kya kar sakte ho\"}]}"
+    },
+    {
+      "role": "user",
+      "text": "jarvis tum kya kya kar sakte ho"
+    },
+    {
+      "role": "jarvis",
+      "text": "Main aapke liye apps open kar sakta hoon, web aur YouTube search kar sakta hoon, screen read kar sakta hoon aur aapke saare sawalon ke jawab de sakta hoon. \n\nBataiye Shailendra, abhi kya madad karoon?"
+    }
+  ]
+}

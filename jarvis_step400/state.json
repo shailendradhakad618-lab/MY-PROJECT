@@ -1,0 +1,10 @@
+{
+  "version": "500.0",
+  "mode": "assistant",
+  "last_command": "jarvis tum kya kya kar sakte ho",
+  "last_intent": "",
+  "last_target": "",
+  "last_result": "complete",
+  "running_task": false,
+  "stop_requested": false
+}
